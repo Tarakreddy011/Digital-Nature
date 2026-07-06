@@ -59,7 +59,7 @@ class Inventory {
     public static void main(String[] args) {
         Inventory inventory = new Inventory();
 
-        // 1. Create and add products
+        
         Product p1 = new Product("101", "Laptop", 5, 1200.00);
         Product p2 = new Product("102", "Wireless Mouse", 20, 25.50);
         
@@ -67,15 +67,14 @@ class Inventory {
         inventory.addProduct(p2);
         System.out.println("Added Laptop and Mouse.");
 
-        // 2. Update a product
+        
         inventory.updateProduct("101", 3, 1150.00);
         System.out.println("Updated Laptop quantity and price.");
 
-        // 3. Delete a product
+        
         inventory.deleteProduct("102");
         System.out.println("Deleted Wireless Mouse.");
         
-        // 4. Try to update a deleted product to test the "not found" logic
         inventory.updateProduct("102", 10, 20.00); 
     }
 
