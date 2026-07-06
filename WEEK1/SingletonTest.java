@@ -1,3 +1,4 @@
+package WEEK1;
 public class SingletonTest {
 
     static class Logger {
