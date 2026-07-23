@@ -1,0 +1,94 @@
+/* Step 4: Create a Stylesheets folder, add a file named mystyle.css, and add formatting classes. */
+
+.score-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.score-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(46, 204, 113, 0.3);
+  box-shadow: 0 8px 32px rgba(46, 204, 113, 0.12);
+}
+
+.student-avatar {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.student-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem 0;
+  color: #fff;
+}
+
+.student-school {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin: 0 0 1.5rem 0;
+}
+
+.score-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.score-label {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.score-value {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #f3f4f6;
+}
+
+.score-value.highlight {
+  color: #f1c40f;
+}
+
+.score-value.pass {
+  color: #2ecc71;
+}
+
+.score-value.fail {
+  color: #e74c3c;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.badge-pass {
+  background: rgba(46, 204, 113, 0.1);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.2);
+}
+
+.badge-fail {
+  background: rgba(231, 76, 60, 0.1);
+  color: #e74c3c;
+  border: 1px solid rgba(231, 76, 60, 0.2);
+}

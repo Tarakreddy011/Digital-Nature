@@ -1,0 +1,30 @@
+/* Step 4: Create a new CSS Module in a file named CohortDetails.module.css. */
+
+/* Step 5: Define a CSS class named box with properties: 
+   300px width, inline-block display, 10px overall margin, 
+   10px top/bottom padding, 20px left/right padding, 
+   a 1px black border, and a 10px border radius. */
+.box {
+  width: 300px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px; /* 10px top/bottom, 20px left/right */
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.03); /* subtle container background */
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Step 6: Define a CSS style for the HTML <dt> element setting the font weight to 500. */
+dt {
+  font-weight: 500;
+}
+
+/* Aesthetic adjustments for dd and list styles */
+dd {
+  margin-inline-start: 0;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #f3f4f6;
+}
